@@ -1,0 +1,62 @@
+body {
+    background-color: #9c51be7c; /* light purple background  */
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#heading {
+    text-align: center;
+    background-color: #8958b8; /* purple background */
+}
+
+img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    background-color: #ba9fd4;
+    text-align: center; 
+    border: 2px solid #8958b8;
+    border-radius: 10px;
+    padding: 15px; 
+    margin: 20px auto;
+    width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Style for the header container */
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8958b8; /* Purple background */
+    color: white;
+}
+
+/* Style for the navigation buttons */
+#nav-buttons button {
+    background-color: #ba9fd4; /* Light purple */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#nav-buttons button:hover {
+    background-color: #9c51be; /* Darker purple on hover */
+}

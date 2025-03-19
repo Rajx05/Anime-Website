@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+            Jujutsu Kaisen Characters
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function showCharacter(character) {
+                const characters = {
+                    yuji: {
+                        name: "Yuji Itadori",
+                        image: "yuji.webp",
+                        description: `<strong>Yuji Itadori</strong> is the main protagonist of the <a href="https://jujutsu-kaisen.fandom.com/wiki/Jujutsu_Kaisen_Wiki" target="_blank">Jujutsu Kaisen series</a>. He is a first-year student at Tokyo Metropolitan Curse Technical College. He is a kind-hearted and selfless individual who values human life above all else. Yuji is also a natural-born athlete with exceptional physical abilities. He is the host of Sukuna, the King of Curses, and possesses immense cursed energy.`
+                    },
+                    megumi: {
+                        name: "Megumi Fushiguro",
+                        image: "megumi.webp",
+                        description: `<strong>Megumi Fushiguro</strong> is a first-year student at Tokyo Metropolitan Curse Technical College. He is a stoic and intelligent sorcerer who uses his Ten Shadows Technique to summon shikigami to fight curses.`
+                    },
+                    nobara: {
+                        name: "Nobara Kugisaki",
+                        image: "nobara.webp",
+                        description: `<strong>Nobara Kugisaki</strong> is a first-year student at Tokyo Metropolitan Curse Technical College. She is a confident and brash sorcerer who uses her Straw Doll Technique to exorcise curses with precision and style.`
+                    }
+                };
+
+                // Update the content dynamically
+                document.getElementById("character-name").innerHTML = characters[character].name;
+                document.getElementById("character-image").src = characters[character].image;
+                document.getElementById("character-image").alt = character;
+                document.getElementById("character-description").innerHTML = characters[character].description;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header-container">
+            <h1 id="heading">Jujutsu Kaisen Characters</h1>
+            <div id="nav-buttons">
+                <button onclick="showCharacter('yuji')">Yuji</button>
+                <button onclick="showCharacter('megumi')">Megumi</button>
+                <button onclick="showCharacter('nobara')">Nobara</button>
+            </div>
+        </div>
+        <img id="character-image" src="yuji.jpg" alt="yuji">
+        <h2 id="character-name">Yuji Itadori</h2>
+        <p id="character-description">
+            <strong>Yuji Itadori</strong> is the main protagonist of the <a href="https://jujutsu-kaisen.fandom.com/wiki/Jujutsu_Kaisen_Wiki" target="_blank">Jujutsu Kaisen series</a>. He is a first-year student at Tokyo Metropolitan Curse Technical College. He is a kind-hearted and selfless individual who values human life above all else. Yuji is also a natural-born athlete with exceptional physical abilities. He is the host of Sukuna, the King of Curses, and possesses immense cursed energy.
+        </p>
+    </body>
+</html>
